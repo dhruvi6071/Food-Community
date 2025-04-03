@@ -1,3 +1,4 @@
+import ImageSlideshow from "@/components/image-slideshow";
 import classes from "./page.module.css";
 import Link from "next/link";
 export default function Home() {
@@ -5,7 +6,7 @@ export default function Home() {
     <>
     <header className={classes.header}>
     <div className={classes.slideshow}>
-
+      <ImageSlideshow />
     </div>
     <div>
        <div className={classes.hero}>
