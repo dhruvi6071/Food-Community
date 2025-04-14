@@ -5,6 +5,6 @@ const db = sql('meals.db');
 export async function getMeals() {
 
     // .run() is used for inserting data and .all() is used for fetching data. 
-    await()
+    await new Promise{(resolve ) => setTimeout(resolve, 5000)};
     return db.prepare('SELECt * FROM meals').all();
 }
